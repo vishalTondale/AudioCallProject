@@ -13,7 +13,7 @@ async function startCall() {
         localAudio.play();
 
         // Setup WebSocket connection for signaling
-        ws = new WebSocket('ws://localhost:8765'); // Replace with your signaling server URL
+        ws = new WebSocket('ws://localhost:8765'); // Update with your WebSocket server URL
 
         ws.onopen = () => {
             console.log('WebSocket connected');
